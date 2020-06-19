@@ -6,16 +6,31 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
+
     <ImageView
         android:id="@+id/iv_plane"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_plane"
-        app:layout_constraintVertical_bias="0.8"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintVertical_bias="0.8" />
 
     <ImageView
         android:id="@+id/iv_plane2"
@@ -23,17 +38,17 @@
         android:layout_height="wrap_content"
         android:src="@drawable/ic_plane"
         android:tint="#000"
-        app:layout_constraintVertical_bias="0.8"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@id/iv_plane"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintVertical_bias="0.8" />
 
     <Button
         android:id="@+id/btn_animate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="animate"
         android:layout_margin="25dp"
+        android:text="animate"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
